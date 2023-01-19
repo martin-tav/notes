@@ -11,8 +11,8 @@
 
 == How green economy is evolving in the countries ? ==
 ** Demand for green skill in online job vacancies > which taxonomy to use > esco skill taxonomy no longer enough > need for a design phase > the european green deal
-
 ** Look at the job description: extract eg : renewable energy, energy management, carbon foot printing
+** Look at the employers (from OECD staff) who identifies themself as green. 
 
 == How much remote work is present in each labour market ? ==
 ** Looking at the job description or in the title : word like (remote), next to the location
@@ -26,3 +26,9 @@
 * Ubiquity : how many occupations require this skill ? -? communications and Excel has a high ubiquity
 
 == Lightcast research in 2023 --> Digital Skills ==
+
+== How to address duplicated job postings ==
+* We applied different approaches
+** Urls, follow them up and tag them
+** Take a timeframe and identify job postings that have same text. Because text used is exactly the same. And then tag them.
+** 
