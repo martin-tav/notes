@@ -22,3 +22,6 @@ Presented by Lightcast (formerly Burning Glass) at the OECD premises
 ** Analysis -> % remote over time or delta vs a reference date
 
 == How 'complex' are occupations dna the skills employers require ==
+
+* Higher diversity -> An occupation requires more skills -> it is more 'complex' (
+* Ubiquity : how many occupations require this skill ? -? communications and Excel has a high ubiquity
