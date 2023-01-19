@@ -7,7 +7,8 @@ Presented by Lightcast (formerly Burning Glass) at the OECD premises
 * Geographical coverage: good for US and Europe
 * Skills: specialized skills (hard skill, technical skills: node.js), common skills (soft skill that can be patent to many occupations: project management)
 * Issue with big data: a lot of noise in job occupations that does not reflect the market dynamic. Data transformation and cleansing to identifiy duplicated job.
-* Analytical questions: 
+
+= Analytical questions =
 
 == How green economy is evolving in the countries ==
 ** Demand for green skill in online job vacancies > which taxonomy to use > esco skill taxonomy no longer enough > need for a design phase > the european green deal
@@ -15,3 +16,9 @@ Presented by Lightcast (formerly Burning Glass) at the OECD premises
 ** Look at the job description: extract eg : renewable energy, energy management, carbon foot printing
 *** 
 == How much remote work is present in each labour market ==
+** Looking at the job description or in the title : word like (remote), next to the location
+** > Presence of remote working mentions in online job vacances > what are the key words to search for > two step approach > 
+** Multilingual context
+** Analysis -> % remote over time or delta vs a reference date
+
+== How 'complex' are occupations dna the skills employers require ==
