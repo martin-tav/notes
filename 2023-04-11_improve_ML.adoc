@@ -51,3 +51,23 @@
 
 
 == Evaluate the performance of a Regression Model
+ Example of determining a tree age by looking at his diameter
+=== Mean Absolute Error
+ 
+* MAE (Mean absolute error) : how far in the model is from the reality in absolute value by get the average of gap
+ MAE = sum (y-y^) / N
+ Example for the tree : MAE : 3.4 years
+ Pros: unis is in the same as the feature to be predicted
+ Cons: does not tell if a model is good or not
+ 
+* RMSE (Root mean square error): similar to MAE (absolute value replaced by squaring the error)
+ RMSE vs MAE : RMSE penalizes large errors more than MAE (because of the square)
+ Pros: unit is in target unit
+ Cons: does not say whether it's a good or not
+
+* R2 (squarred R)
+Compare the model with a very simplified model
+Example: Computes how much better the regression line fits the data than the mean line
+ Pros: 
+ Pr
+ 
