@@ -67,11 +67,33 @@
  Cons: does not say whether it's a good or not
 
 * R2 (squarred R)
-Compare the model with a very simplified model
-Example: Computes how much better the regression line fits the data than the mean line
-  R2 = (var(mean) - var(regressionline)) / var(mean)
-  R2 between 0 and 1. 
-     0 means the model has the same variance as an oversimplified model --> does not bring anything good
-     1 means the model fits perfectly with the data
-  
- 
+** Compare the model with a very simplified model
+** Example: Computes how much better the regression line fits the data than the mean line
+** R2 = (var(mean) - var(regressionline)) / var(mean)
+** R2 between 0 and 1. 
+*** 0 means the model has the same variance as an oversimplified model --> does not bring anything good
+*** 1 means the model fits perfectly with the data
+*** <0 : model is worse than just predicting the mean model  
+     
+* sklearn api
+** MAE: mean_absolute_error(actuals, predictions)
+** RMSE : sqrt(mean_squared_error(actuals, predictions))
+** R2 : r2_score(actuals, predictions)
+
+
+== Exercices
+* Classifyers: 
+** LogisticRegression() : predict a probability to belong to a given class with a threshold. Special case of generalized linear models with a Bernouilli conditional distribution
+** 
+** 
+
+== Regularization
+* Tune model further with fighting against overfitting especially with complex models
+ R2 great for train data but very bad for test data --> overfit
+* Minimize Loss function; min L = sum (y-yî)^2
+* 2 types of regularization on linear regression: 
+** Ridge regularization (add penalty alpha * Sum(m^2)) -> performs better when features of roughly equal importance
+** Lasso regularization (add penalty alpha * sum (abs(m)) -> useful when features vary significantly and will to do a feature selection
+** sklearn function
+*** Ridge(alpha=2) -> set lever to alpha = 2 but using grid search cross-validation allows to find best setting for hyperparameters
+*** RidgeCV(cv=kfold) (kfold = KFold(....))
