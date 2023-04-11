@@ -52,6 +52,7 @@
 
 == Evaluate the performance of a Regression Model
  Example of determining a tree age by looking at his diameter
+ 
 === Mean Absolute Error
  
 * MAE (Mean absolute error) : how far in the model is from the reality in absolute value by get the average of gap
@@ -68,6 +69,9 @@
 * R2 (squarred R)
 Compare the model with a very simplified model
 Example: Computes how much better the regression line fits the data than the mean line
- Pros: 
- Pr
+  R2 = (var(mean) - var(regressionline)) / var(mean)
+  R2 between 0 and 1. 
+     0 means the model has the same variance as an oversimplified model --> does not bring anything good
+     1 means the model fits perfectly with the data
+  
  
