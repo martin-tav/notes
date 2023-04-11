@@ -107,5 +107,5 @@
  X.var()
  sel = VarianceThreshold(threshold=(0.01))
  sel.fit(X_train)
-* Apply RFE (recursive feature elimination). Loop with n features and decrease the number of features and check score
+* Apply RFE (recursive feature elimination). Loop with n features and decrease the number of features and check all the score
  
