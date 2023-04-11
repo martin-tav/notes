@@ -81,11 +81,11 @@
 ** R2 : r2_score(actuals, predictions)
 
 
-== Exercices
-* Classifyers: 
-** LogisticRegression() : predict a probability to belong to a given class with a threshold. Special case of generalized linear models with a Bernouilli conditional distribution
-** 
-** 
+== Exercices with Classification
+* LogisticRegression() : predict a probability to belong to a given class with a threshold. Special case of generalized linear models with a Bernouilli conditional distribution
+* DecisionTree()
+* GaussianNB()
+* SVC()
 
 == Regularization
 * Tune model further with fighting against overfitting especially with complex models
@@ -97,3 +97,15 @@
 ** sklearn function
 *** Ridge(alpha=2) -> set lever to alpha = 2 but using grid search cross-validation allows to find best setting for hyperparameters
 *** RidgeCV(cv=kfold) (kfold = KFold(....))
+
+== Exercice with regression
+ Example: bikes rental
+* Remove variables that are strongly correlated to each other: cf = correlatedFeatures(X_train, 0.85)
+* Remove variables connected to the target (total count)
+* one-hot-encode with pd.get_dummies(weekdays values into column, season into column)
+* Remove variables with low variance. 
+ X.var()
+ sel = VarianceThreshold(threshold=(0.01))
+ sel.fit(X_train)
+* Apply RFE (recursive feature elimination). Loop with n features and decrease the number of features and check score
+ 
