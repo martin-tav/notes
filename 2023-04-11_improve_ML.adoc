@@ -1,1 +1,35 @@
-= Improve ML performance =
+:sectnums:
+= Improve ML performance
+
+== Evaluate the performance of a Classification Model
+
+=== Accuracy
+ accuracy = number of correct predictions / total number of predictions
+
+* Pros: A single number measure
+* Cons: Accuracy is not the best way to measure performance if unbalanced class
+* For instance: balance class (50% cheese lovers and 50% cheese haters) and unbalanced classes (1 winner and 45 million loosers)
+
+=== Confusion Matrix
+* Pros: useful table for seeing the detail (correct and incorrect classification - True Positif (TP), False Positif (FP))
+* Cons: Not a single number
+=== Precision / Recall
+
+=== Precision - penalizes models with FP
+ Precision = (TP / (TP + FP) 
+ Cider manufacturer wants to maximize precision - who wants only good apples (minimum of bad apples)
+
+=== Recall - penalizes models with FN
+ Recall = TP / (TP + FN) 
+ Low-cost supermarket wants to maximize recall -  who don't want to throw away good apples (mimimum of good apples to throw away)
+
+=== F1 - balances both Precision and Recall
+ F1 = 2 * (precision * recall)/(precision + recall)
+ 
+ === ROC (Receiver Operating Characteristic) Curve
+* Logistic Regresssion predict a probability a data point belongs to a specific class (78% is likely to be spam)
+* ROC allows to move the threshold (probability) and then get another confuxion matrix
+* Other measures: 
+** True positive rate: TPR =  TP / (TP + FN) - True positif amongst all the positif predicted
+** False positive rate FPR = FP / (FP + TN) - False positif amongst all the negative predicted
+* ROC curbe represents TPR by FPR -> good model goes along the top left corner
