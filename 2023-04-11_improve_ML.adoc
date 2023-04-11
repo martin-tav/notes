@@ -16,20 +16,38 @@
 === Precision / Recall
 
 === Precision - penalizes models with FP
- Precision = (TP / (TP + FP) 
+ Precision = (TP / (TP + FP) (amongst predicted positive)
  Cider manufacturer wants to maximize precision - who wants only good apples (minimum of bad apples)
 
 === Recall - penalizes models with FN
- Recall = TP / (TP + FN) 
+ Recall = TP / (TP + FN) (amongst real positive)
  Low-cost supermarket wants to maximize recall -  who don't want to throw away good apples (mimimum of good apples to throw away)
 
 === F1 - balances both Precision and Recall
  F1 = 2 * (precision * recall)/(precision + recall)
  
- === ROC (Receiver Operating Characteristic) Curve
+=== ROC (Receiver Operating Characteristic) Curve
+* ROC curve shows how effectively a model can split binary classes
 * Logistic Regresssion predict a probability a data point belongs to a specific class (78% is likely to be spam)
 * ROC allows to move the threshold (probability) and then get another confuxion matrix
 * Other measures: 
 ** True positive rate: TPR =  TP / (TP + FN) - True positif amongst all the positif predicted
 ** False positive rate FPR = FP / (FP + TN) - False positif amongst all the negative predicted
 * ROC curbe represents TPR by FPR -> good model goes along the top left corner
+* AUC = numerical measure for comparring ROC curves
+
+=== sklearn api ===
+* accuracy_score(y_test, predictions)
+* confusion_matrix(y_test, predictions)
+* classifcaton_report(y_test, predictions, target_names = data.target_names)
+* plotRocAuc(model, X_test, y_test)
+
+=== Balance and unbalanced classes ===
+* Balance unbalanced classes by 
+** oversampling smaller class (add copies of a random selection of smaller class)
+ # Oversample malignant
+ Xy_train_malignant_oversampled = resample(Xy_train_malignant, replace=True, n_samples=Xy_train_benign_count)
+** undersampling larger class (removes data points at random of larger class)
+
+
+== Evaluate the performance of a Regression Model
